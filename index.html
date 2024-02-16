@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Calculator">
+        <meta name="keywords" content="Airthmetic Operation">
+        <meta name="author" content="Anuj Kumar Chaudhary">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Calculator
+        </title>
+        <link rel="icon" href="logo.jpg"   >
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to <span id="element"></span></h1>
+        <div class="firstbox">
+              <input type="textbox"  class="first" value="Enter the First Number" id="first" step="any">
+        </div>
+        <div class="secondbox">
+                <input type="textbox" class="second" value="Enter the Second Number" id="second" step="any">
+        </div>
+        <div class="drop-down">
+            <select id="op" class="op">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="%">%</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select>
+        </div> 
+        <div class="result-btn">
+             <button onclick="calc()" class="calcbutton">
+                 Calculate
+             </button>
+        </div>
+        <div class="output">
+               <input type ="textbox" class="third" id="result" readonly="">  
+        </div>
+            <script src="main.js"></script>
+    </body>
+</html>
